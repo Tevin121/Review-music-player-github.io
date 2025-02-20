@@ -9,7 +9,7 @@
 
 	}
 	section {
-		background-color: white;
+		background-color: rgb(133, 133, 133);
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -33,7 +33,7 @@
 		flex: 1;
 	}
 	section { 
-	background-color: white;
+	background-color: rgb(117, 117, 117);
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,7 +52,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: rgb(121, 121, 121);
 }
 
 h1 {
@@ -64,7 +64,7 @@ h1 {
 
 h2,h3,h4 {
 	font-size: 1.8rem;
-	color: black;
+	color: rgb(255, 255, 255);
 	display: block;
 	text-align: left;
 	padding-left: 25%;
@@ -74,7 +74,7 @@ h2,h3,h4 {
 
 p {
 	font-size: 1.4em;
-	color: black;
+	color: rgb(255, 255, 255);
 	padding: 10px 40px 10px 40px;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 
 .bg1 {
-	background-color: #ffe400;
+	background-color: #33ff00;
 }
 
 .bg2 {
@@ -136,5 +136,5 @@ footer {
 }
 
 #incomplete {
-	background-color: red;
+	background-color: rgb(0, 4, 255);
 }
