@@ -51,6 +51,9 @@ void draw() {
   if (playList.length > 0 && !playList[currentSong].isPlaying()) {
     playNextSong();
   }
+
+  // Draw the help box
+  drawHelpBox();
 }
 
 void keyPressed() {
@@ -116,4 +119,23 @@ void playPreviousSong() {
     playList[currentSong].rewind(); // Restart the previous song
     playList[currentSong].play(); // Play the previous song
   }
+}
+
+// Function to draw the help box
+void drawHelpBox() {
+  fill(255); // White background for the help box
+  rect(width / 4, height / 2, width / 2, height / 3, 10); // Draw the box with rounded corners
+
+  fill(0); // Black text color
+  textAlign(LEFT, TOP); // Align text to the top-left corner
+  textSize(16);
+  float x = width / 4 + 20; // Padding inside the box
+  float y = height / 2 + 20;
+
+  // Display the controls and their actions
+  text("Controls:", x, y);
+  text("P - Play/Pause the current song", x, y + 20);
+  text("N - Play the next song", x, y + 40);
+  text("B - Play the previous song", x, y + 60);
+  text("S - Play a sound effect", x, y + 80);
 }
